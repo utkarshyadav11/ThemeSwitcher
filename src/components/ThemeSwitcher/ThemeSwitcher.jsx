@@ -1,5 +1,5 @@
 import useTheme from "../hooks/useTheme";
-
+import "./ThemeSwitcher.css"
 const ThemeSwitcher = () => {
     const { theme, toggleTheme, updateCustomColors } = useTheme();
 
@@ -8,7 +8,7 @@ const ThemeSwitcher = () => {
     };
 
     return (
-        <div>
+        <div className="Theme_outer">
             <button onClick={toggleTheme}>
                 Switch to {theme === 'light' ? 'Dark' : 'Light'} Mode
             </button>
